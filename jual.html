@@ -98,13 +98,20 @@
 
   <main>
     <h2>Formulir Jual Produk</h2>
-   <form action="https://formspree.io/f/meogwpwj" method="POST">
-  <input type="text" name="nama" placeholder="Nama Anda" required>
-   <input type="text" name="kontak" placeholder="kontak" required>
-  <input type="email" name="email" placeholder="Email" required>
-   <input type="text" name="nama produk" placeholder="Nama produk" required>
-  <textarea name="pesan" placeholder="Deskripsi Produk" required></textarea>
-  <button type="submit">Kirim</button>
+  <form
+  action="https://formspree.io/f/meogwpwj"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
 </form>
 
 
