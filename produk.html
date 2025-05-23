@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar Produk - Toko Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    nav a.sell {
+      background-color: #f39c12;
+      box-shadow: 0 0 8px #f39c12;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    /* Tab Menu */
+    .tab-menu {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ddd;
+    }
+    .tab-menu button {
+      background: none;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: border-color 0.3s;
+      color: #34495e;
+      font-size: 1rem;
+    }
+    .tab-menu button.active {
+      border-color: #f39c12;
+      color: #f39c12;
+    }
+    /* Tab Content */
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    /* Produk Item */
+    .produk-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 1.5rem;
+    }
+    .produk-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      background: #fafafa;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .produk-item img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+    }
+    .produk-item h4 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+    .produk-item p {
+      margin: 0.25rem 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daftar Produk</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="produk.html" class="sell">Daftar Produk</a>
+    <a href="kontak.html">Kontak</a>
+    <a href="jual.html">Jual</a>
+  </nav>
+
+  <main>
+    <div class="tab-menu" role="tablist">
+      <button role="tab" aria-selected="true" class="active" data-target="laptop">Laptop</button>
+      <button role="tab" aria-selected="false" data-target="smartphone">Smartphone</button>
+      <button role="tab" aria-selected="false" data-target="kamera">Kamera</button>
+      <button role="tab" aria-selected="false" data-target="televisi">Televisi</button>
+    </div>
+
+    <section id="laptop" class="tab-content active" role="tabpanel">
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=Laptop+1" alt="Laptop 1" />
+          <h4>Asus Vivobook X515</h4>
+          <p>Intel Core i5, RAM 8GB, SSD 512GB</p>
+          <p>Harga: Rp7.500.000</p>
+        </div>
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=Laptop+2" alt="Laptop 2" />
+          <h4>Lenovo IdeaPad 3</h4>
+          <p>AMD Ryzen 5, RAM 8GB, SSD 256GB</p>
+          <p>Harga: Rp6.800.000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="smartphone" class="tab-content" role="tabpanel" hidden>
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=Smartphone+1" alt="Smartphone 1" />
+          <h4>Samsung Galaxy A52</h4>
+          <p>128GB, RAM 6GB, Kamera 64MP</p>
+          <p>Harga: Rp3.500.000</p>
+        </div>
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=Smartphone+2" alt="Smartphone 2" />
+          <h4>Xiaomi Redmi Note 10</h4>
+          <p>128GB, RAM 4GB, Kamera 48MP</p>
+          <p>Harga: Rp2.800.000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kamera" class="tab-content" role="tabpanel" hidden>
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=Kamera+1" alt="Kamera 1" />
+          <h4>Canon EOS M50</h4>
+          <p>24.1MP, Mirrorless</p>
+          <p>Harga: Rp8.000.000</p>
+        </div>
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=Kamera+2" alt="Kamera 2" />
+          <h4>Nikon D3500</h4>
+          <p>24.2MP, DSLR</p>
+          <p>Harga: Rp7.200.000</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="televisi" class="tab-content" role="tabpanel" hidden>
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=TV+1" alt="TV 1" />
+          <h4>Samsung Smart TV 43"</h4>
+          <p>4K UHD, LED</p>
+          <p>Harga: Rp5.500.000</p>
+        </div>
+        <div class="produk-item">
+          <img src="https://via.placeholder.com/200x150?text=TV+2" alt="TV 2" />
+          <h4>LG LED TV 32"</h4>
+          <p>HD Ready, LED</p>
+          <p>Harga: Rp3.000.000</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="text-align:center; padding:1rem; background:#ecf0f1; margin-top:2rem;">
+    &copy; 2025 Toko Online. Semua Hak Dilindungi.
+  </footer>
+
+  <script>
+    // Tab switching simple script
+    const tabs = document.querySelectorAll('.tab-menu button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active from all tabs and hide all content
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        contents.forEach(c => {
+          c.classList.remove('active');
+          c.setAttribute('hidden', true);
+        });
+
+        // Activate clicked tab and show content
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        const target = tab.getAttribute('data-target');
+        document.getElementById(target).classList.add('active');
+        document.getElementById(target).removeAttribute('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
