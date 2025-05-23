@@ -98,21 +98,16 @@
 
   <main>
     <h2>Formulir Jual Produk</h2>
-    <form id="jualForm">
-      <label for="namaProduk">Nama Produk:</label>
-      <input type="text" id="namaProduk" name="namaProduk" placeholder="Masukkan nama produk" required />
+   <form action="https://formspree.io/f/moqplxyz" method="POST">
+  <input type="text" name="nama" placeholder="Nama Anda" required>
+   <input type="text" name="kontak" placeholder="kontak" required>
+  <input type="email" name="email" placeholder="Email" required>
+   <input type="text" name="nama produk" placeholder="Nama produk" required>
+  <textarea name="pesan" placeholder="Deskripsi Produk" required></textarea>
+  <button type="submit">Kirim</button>
+</form>
 
-      <label for="deskripsiProduk">Deskripsi Produk:</label>
-      <textarea id="deskripsiProduk" name="deskripsiProduk" rows="4" placeholder="Tuliskan deskripsi produk" required></textarea>
 
-      <label for="hargaProduk">Harga Produk (Rp):</label>
-      <input type="number" id="hargaProduk" name="hargaProduk" placeholder="Masukkan harga produk" required min="0" />
-
-      <label for="kontakPenjual">Kontak Anda:</label>
-      <input type="text" id="kontakPenjual" name="kontakPenjual" placeholder="Nomor telepon atau email" required />
-
-      <button type="submit">Kirim</button>
-    </form>
   </main>
 
   <footer>
