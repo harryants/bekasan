@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+nav a.jual {
+  background-color: #ff9800;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav a.jual:hover {
+  background-color: #e68900;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.tombol-home {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-hijau {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-kuning {
+  background-color: #ffc107;
+  color: black;
+  margin-left: 10px;
+}
