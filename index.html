@@ -22,14 +22,71 @@
 
 <main>
   <section id="home">
-    <h2>Selamat Datang di bekasn!</h2>
-    <p>Kami menyediakan produk-produk bekas berkualitas yang telah melewati berbagai uji kelayakan barang untuk memastikan kualitas yang terjamin!</p>
-    <img src="https://via.placeholder.com/800x300?text=Banner+Toko+Online" alt="Banner Toko" class="banner">
-    <div class="tombol-home">
-      <a href="#produk" class="btn btn-hijau">Lihat Produk</a>
-      <a href="#jual" class="btn btn-kuning">Jual Produk Anda</a>
-    </div>
-  </section>
+  <h2>Selamat Datang di Toko Online Kami!</h2>
+  <p>Kami menyediakan produk-produk bekas berkualitas dengan harga terjangkau. Belanja mudah, aman, dan cepat!</p>
+
+  <div class="gallery">
+    <img src="https://via.placeholder.com/250x150?text=Televisi+Bekas" alt="Televisi Bekas" />
+    <img src="https://via.placeholder.com/250x150?text=Kamera+Bekas" alt="Kamera Bekas" />
+    <img src="https://via.placeholder.com/250x150?text=Handphone+Bekas" alt="Handphone Bekas" />
+  </div>
+
+  <div class="tombol-home">
+    <a href="#produk" class="btn btn-hijau">Lihat Produk</a>
+    <a href="#jual" class="btn btn-kuning">Jual Produk Anda</a>
+  </div>
+</section>
+
+<style>
+  #home {
+    text-align: center;
+    padding: 2rem;
+  }
+  #home h2 {
+    color: #2c3e50;
+  }
+  #home p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #34495e;
+  }
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .gallery img {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    max-width: 250px;
+    height: auto;
+  }
+  .tombol-home a {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .btn-hijau {
+    background-color: #27ae60;
+    color: white;
+  }
+  .btn-hijau:hover {
+    background-color: #2ecc71;
+  }
+  .btn-kuning {
+    background-color: #f1c40f;
+    color: #2c3e50;
+  }
+  .btn-kuning:hover {
+    background-color: #f39c12;
+    color: white;
+  }
+</style>
+
 
   <section id="tentang">
     <h2>Tentang Kami</h2>
